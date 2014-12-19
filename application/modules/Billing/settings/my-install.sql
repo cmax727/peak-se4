@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('billing', 'Billing', 'This is a Invoice-Payment system for Christopher.', '4.0.0', 1, 'extra') ;

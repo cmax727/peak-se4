@@ -1,0 +1,1408 @@
+{
+  "type": "module",
+  "name": "album",
+  "version": "4.2.0",
+  "revision": "9579",
+  "path": "application\/modules\/Album",
+  "repository": null,
+  "date": "Thu, 12 Jan 2012 00:17:41 +0000",
+  "title": "Albums",
+  "description": "Albums",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "changeLog": {
+    "4.2.0": {
+      "externals\/scripts\/composer_photo.js": "Added namespace for Wibiya compatibility",
+      "externals\/scripts\/core.js": "Added namespace for Wibiya compatibility",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.8p1": {
+      "controllers\/IndexController.php": "Fixed error when category is empty",
+      "externals\/scripts\/composer_photo.js": "Added cross domain policy file for CDN support",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.8": {
+      "controllers\/AdminSettingsController.php": "Fixed typo in variable name",
+      "controllers\/AlbumController.php": "Added pages to the layout editor; added ability to move photos between albums; fixed issue with ordering photos",
+      "controllers\/IndexController.php": "Added pages to the layout editor; fixed issue with ordering photos",
+      "controllers\/PhotoController.php": "Added pages to the layout editor",
+      "externals\/.htaccess": "Updated with far-future expires headers for static resources",
+      "externals\/styles\/main.css": "Style tweaks for layout editor",
+      "Form\/Album.php": "Fixed issue where photo could be placed in the incorrect album",
+      "Form\/Album\/EditPhoto.php": "Added ability to move photos between albums",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added pages to the layout editor",
+      "settings\/install.php": "Added pages to the layout editor",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_composePhoto.tpl": "Added static base URL for CDN support",
+      "views\/scripts\/admin-settings\/categories.tpl": "Added static base URL for CDN support",
+      "views\/scripts\/album\/view.tpl": "Added pages to the layout editor",
+      "views\/scripts\/index\/browse.tpl": "Added pages to the layout editor",
+      "views\/scripts\/photo\/view.tpl": "Added static base URL for CDN support; compatibility for AJAX page loader",
+      "widgets\/browse-menu-quick\/Controller.php": "Added",
+      "widgets\/browse-menu-quick\/index.tpl": "Added",
+      "widgets\/browse-menu\/Controller.php": "Added",
+      "widgets\/browse-menu\/index.tpl": "Added",
+      "widgets\/browse-search\/Controller.php": "Added",
+      "widgets\/browse-search\/index.tpl": "Added",
+      "widgets\/profile-albums\/Controller.php": "Fixed issue where title would not be displayed when placed outside a tab container widget"
+    },
+    "4.1.7p1": {
+      "Album\/Form\/Album.php": "Fixed issue with array_merge that could cause photos to be put into the incorrect album",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.7": {
+      "Api\/Core.php": "Merging methods from api to dbtables",
+      "controllers\/AdminManageController.php": "Merging methods from api to dbtables",
+      "controllers\/AdminSettingsController.php": "Merging methods from api to dbtables",
+      "controllers\/AlbumController.php": "Merging methods from api to dbtables",
+      "controllers\/PhotoController.php": "Merging methods from api to dbtables",
+      "Form\/Album.php": "Minor optimizations",
+      "Form\/Album\/Edit.php": "Minor optimizations",
+      "Form\/Search.php": "Minor optimizations",
+      "Model\/Album.php": "Minor optimizations",
+      "Model\/Category.php": "Minor optimizations",
+      "Model\/DbTable\/Albums.php": "Minor optimizations",
+      "Model\/DbTable\/Categories.php": "Minor optimizations",
+      "Model\/DbTable\/Photos.php": "Minor optimizations",
+      "Model\/Photo.php": "Minor optimizations",
+      "Plugin\/Core.php": "Minor optimizations",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.5-4.1.7.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/photo\/view.tpl": "Minor optimizations",
+      "widgets\/list-popular-photos\/Controller.php": "Minor optimizations",
+      "widgets\/list-recent-photos\/Controller.php": "Minor optimizations",
+      "widgets\/profile-albums\/Controller.php": "Minor optimizations"
+    },
+    "4.1.5": {
+      "controllers\/AlbumController.php": "Remove form elements when not necessary by admin configuration",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version"
+    },
+    "4.1.4": {
+      "controllers\/IndexController.php": "Fixed the issue of some servers not filtering the search correctly",
+      "controllers\/PhotoController.php": "Added rotate and flip options",
+      "externals\/images\/flip_horizontal.png": "Added",
+      "externals\/images\/flip_vertical.png": "Added",
+      "externals\/images\/rotate_ccw.png": "Added",
+      "externals\/images\/rotate_cw.png": "Added",
+      "externals\/scripts\/core.js": "Added functions for rotate and flip options",
+      "externals\/styles\/main.css": "Added styles for rotate and flip options",
+      "externals\/styles\/mobile.css": "Added",
+      "Form\/Album.php": "Fixed issue of album variable missing notice",
+      "Model\/DbTable\/Albums.php": "Added blog as a special album",
+      "Model\/Photo.php": "Different",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.3-4.1.4.sql": "Added",
+      "settings\/my.sql": "Incremented version; Added blog as a special album; Inserts menu item for mobile",
+      "views\/scripts\/photo\/view.tpl": "Added rotate and flip options"
+    },
+    "4.1.3": {
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/photo\/view.tpl": "Can now use left and right arrow keys for prev\/next photo"
+    },
+    "4.1.2": {
+      "\/application\/languages\/en\/album.csv": "Added phrases",
+      "controllers\/AlbumController.php": "Added ability to order photos in an album",
+      "controllers\/PhotoController.php": "Added ability to edit title\/description of photo through the view page",
+      "externals\/styles\/main.css": "Added styles",
+      "Form\/Album\/EditPhoto.php": "Added",
+      "Form\/Photo\/Delete.php": "Added",
+      "Form\/Photo\/Edit.php": "Refactored",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added new widgets",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.1-4.1.2.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/album\/editphotos.tpl": "Fixed missing closing tag",
+      "views\/scripts\/album\/view.tpl": "Added ability to order photos in an album",
+      "views\/scripts\/photo\/delete.tpl": "Added",
+      "views\/scripts\/photo\/edit.tpl": "Added",
+      "views\/scripts\/photo\/view.tpl": "Use AJAX friend list retrieval by default on photo tagging",
+      "widgets\/list-popular-albums\/Controller.php": "Added",
+      "widgets\/list-popular-albums\/index.tpl": "Added",
+      "widgets\/list-popular-photos\/Controller.php": "Added",
+      "widgets\/list-popular-photos\/index.tpl": "Added",
+      "widgets\/list-recent-albums\/Controller.php": "Added",
+      "widgets\/list-recent-albums\/index.tpl": "Added",
+      "widgets\/list-recent-photos\/Controller.php": "Added",
+      "widgets\/list-recent-photos\/index.tpl": "Added"
+    },
+    "4.1.1": {
+      "Api\/Core.php": "Changes for storage system modifications; fixed incorrect storage system params (in Model\/Photo.php)",
+      "controllers\/AdminSettingsController.php": "Newly created categories gets the correct owner id",
+      "controllers\/AlbumController.php": "Moved photo handling into a setPhoto() method",
+      "controllers\/IndexController.php": "Moved photo handling into a setPhoto() method",
+      "externals\/.htaccess": "Added keywords; removed deprecated code",
+      "Model\/Album.php": "Changes for storage system modifications",
+      "Model\/Photo.php": "Changes for storage system modifications; moved photo handling into a setPhoto() method",
+      "Plugin\/Core.php": "Changes for storage system modifications; moved photo handling into a setPhoto() method",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.1.0-4.1.1.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/admin-settings\/categories.tpl": "Hides the owner id column when viewing categories"
+    },
+    "4.1.0": {
+      "\/application\/languages\/en\/album.csv": "Added phrases",
+      "controllers\/AdminLevelController.php": "Added notice on form save",
+      "controllers\/AdminManageController.php": "Fixed issue with album deletion",
+      "controllers\/AdminSettingsController.php": "Added notice on form save",
+      "controllers\/AlbumController.php": "Fixed UI issue with smoothboxes",
+      "controllers\/IndexController.php": "Improved search function on manage page",
+      "externals\/styles\/main.css": "Fixed minor style issues",
+      "Form\/Album.php": "Fixed issue with disabled privacy options",
+      "Form\/Album\/Edit.php": "Fixed issue with disabled privacy options",
+      "Model\/Photo.php": "Fixed issue with deleting profile photos when the album plugin is not installed",
+      "Plugin\/Job\/Maintenance\/RebuildPrivacy.php": "Added",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Removed",
+      "settings\/changelog.php": "Incremented version",
+      "settings\/content.php": "Added pagination\/item count limits to widgets",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.3-4.0.4.sql": "Backwards compatibility fix for tasks modifications",
+      "settings\/my-upgrade-4.0.5-4.1.0.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/admin-manage\/delete.tpl": "Added",
+      "views\/scripts\/admin-manage\/index.tpl": "Adjusted return link",
+      "views\/scripts\/index\/browse.tpl": "Fixed UTF-8 truncation issue",
+      "views\/scripts\/index\/manage.tpl": "Added filter form",
+      "views\/scripts\/index\/upload.tpl": "Hides irrelevant form values when adding photos to existing album",
+      "views\/scripts\/photo\/view.tpl": "Added comment for AJAX friend retrieval",
+      "widgets\/profile-albums\/Controller.php": "Added pagination\/item count limit",
+      "widgets\/profile-albums\/index.tpl": "Added pagination\/item count limit"
+    },
+    "4.0.5": {
+      "controllers\/AdminLevelController.php": "Fixed bug preventing switching level",
+      "controllers\/AlbumController.php": "Added registered privacy type",
+      "Form\/Admin\/Settings\/Level.php": "Added registered privacy type",
+      "Form\/Album.php": "Added registered privacy type",
+      "Form\/Album\/Edit.php": "Added registered privacy type",
+      "Model\/Album.php": "Removed redundant search columns",
+      "Model\/Photo.php": "Removed redundant search columns",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Added idle support; added registered privacy type",
+      "settings\/changelog.php": "Added",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/admin-level\/index.tpl": "Fixed bug preventing switching level",
+      "views\/scripts\/album\/view.tpl": "Fixes rare error with empty titles"
+    },
+    "4.0.4": {
+      "controllers\/AlbumController.php": "Tweak for message photos",
+      "externals\/styles\/main.css": "Improved RTL support",
+      "Model\/DbTable\/Albums.php": "Tweak for message photos",
+      "Plugin\/Task\/Maintenance\/RebuildPrivacy.php": "Added to fix privacy issues in the feed",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.3-4.0.4.sql": "Added",
+      "settings\/my.sql": "Incremented version",
+      "views\/scripts\/_composePhoto.tpl": "Added missing translation",
+      "views\/scripts\/_formButtonCancel.tpl": "Removing deprecated code",
+      "views\/scripts\/photo\/view.tpl": "Added missing translation"
+    },
+    "4.0.3": {
+      "controllers\/IndexController.php": "Quick navigation uses menu system",
+      "Plugin\/Menus.php": "Better auth handling for menus",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.2-4.0.3.sql": "Added",
+      "settings\/my.sql": "Added album menus to the menu editor; quick navigation uses menu system; incremented version",
+      "views\/scripts\/admin-manage\/index.tpl": "Correct locale date formatting; added missing translation",
+      "views\/scripts\/admin-settings\/categories.tpl": "Added missing translation",
+      "views\/scripts\/admin-settings\/index.tpl": "Added missing translation",
+      "views\/scripts\/index\/browse.tpl": "Quick navigation uses menu system",
+      "views\/scripts\/index\/manage.tpl": "Quick navigation uses menu system",
+      "\/application\/languages\/en\/album.csv": "Added phrases"
+    },
+    "4.0.2": {
+      "Api\/Core.php": "Categories ordered by name",
+      "controllers\/AdminLevelController.php": "Various level settings fixes and enhancements",
+      "controllers\/AlbumController.php": "Fixed activity privacy rebinding problem",
+      "controllers\/IndexController.php": "Fixed problem setting the category in browse",
+      "Form\/Admin\/Level.php": "Moved",
+      "Form\/Admin\/Settings\/Level.php": "Various level settings fixes and enhancements",
+      "Model\/Photo.php": "Added missing parent::_postDelete(), could have caused issues with orphaned rows",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.1-4.0.2.sql": "Added",
+      "settings\/my.sql": "Various level settings fixes and enhancements",
+      "\/application\/languages\/en\/album.csv": "Fix activity feed translations"
+    },
+    "4.0.1": {
+      "Api\/Core.php": "Cleanup of temporary files; adjustment for trial",
+      "controllers\/AlbumController.php": "Fixed missing level permissions check",
+      "controllers\/PhotoController.php": "Fixed missing level permissions check; added view count support",
+      "Form\/Admin\/Level.php": "Source code formatting",
+      "Plugin\/Core.php": "Query optimization",
+      "settings\/manifest.php": "Incremented version",
+      "settings\/my-upgrade-4.0.0-4.0.1.sql": "Added",
+      "settings\/my.sql": "Added missing view_count and comment_count columns to the engine4_album_photos table"
+    }
+  },
+  "meta": {
+    "date": "Thu, 12 Jan 2012 00:17:41 +0000",
+    "title": "Albums",
+    "description": "Albums",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Album\/settings\/install.php",
+    "class": "Album_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-core": {
+      "type": "module",
+      "name": "core",
+      "guid": "module-core",
+      "minVersion": "4.2.0",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Album": {
+      "type": "directory",
+      "path": "application\/modules\/Album",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 512,
+          "sha1": "49d9ac911e5ba6b1283a16aeab09737f1531068a"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 537,
+          "sha1": "29c59e47c21e6b5f1b9218c26844ba00c5ddae85"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminLevelController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2247,
+          "sha1": "84a0a966c5b04a6832d8ba0386e78e902e4ed288"
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2167,
+          "sha1": "f8f5d61d27d70dcfd8c4995e8ba64fec4b3df5ab"
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5800,
+          "sha1": "9b759b42e705d2d150078a1042d87a83a7e50503"
+        },
+        {
+          "path": "controllers\/AlbumController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 15284,
+          "sha1": "0f617a8dd3e9b3dd41b5310c5b7bbf984b0e93ee"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9308,
+          "sha1": "dafde104ce2dffcec36d59e4357404cb02ed8fbe"
+        },
+        {
+          "path": "controllers\/PhotoController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 11054,
+          "sha1": "7abfc3b6b122b7d1e561c255d821cc7a69b69688"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1042,
+          "sha1": "6c835f103d253edf70bfd5ba2430ebe3fa8cacdd"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/add.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 713,
+          "sha1": "e7199f19204b178a59d9eb7bbe1522bec4ce48a8"
+        },
+        {
+          "path": "externals\/images\/album_delete.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 653,
+          "sha1": "642450d94bff5af9037b3100bb9cc0ff55c2241b"
+        },
+        {
+          "path": "externals\/images\/album_editinfo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 783,
+          "sha1": "b1fcd0cb0afa649abda653eae4f4186b9d3e07de"
+        },
+        {
+          "path": "externals\/images\/album_manage.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 661,
+          "sha1": "ca8fa077f56d5a5f2b6b4bcde921eff1cb76bf94"
+        },
+        {
+          "path": "externals\/images\/album_upload.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 653,
+          "sha1": "124dd7319ae3eebfe028991d6c3b162180b73e14"
+        },
+        {
+          "path": "externals\/images\/empty.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3475,
+          "sha1": "046f25079798cbc87335aa77bd015e3041b6da07"
+        },
+        {
+          "path": "externals\/images\/flip_horizontal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 625,
+          "sha1": "aef2ebca3d00bd338102c8ba91b4cc1836af5d69"
+        },
+        {
+          "path": "externals\/images\/flip_vertical.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 669,
+          "sha1": "ff907e69ab622d86680688c67ac2c688145644ed"
+        },
+        {
+          "path": "externals\/images\/nophoto_album_thumb_normal.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3475,
+          "sha1": "046f25079798cbc87335aa77bd015e3041b6da07"
+        },
+        {
+          "path": "externals\/images\/rotate_ccw.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 608,
+          "sha1": "49616ee556ab6919952b8da2b37fed640faa22e1"
+        },
+        {
+          "path": "externals\/images\/rotate_cw.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 602,
+          "sha1": "9ebb50d335cd87e13bb64207eae94f8642ca1040"
+        },
+        {
+          "path": "externals\/images\/types",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/types\/album.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 661,
+          "sha1": "ca8fa077f56d5a5f2b6b4bcde921eff1cb76bf94"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/composer_photo.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 7188,
+          "sha1": "d2f128c22806cf828f449831f345b5caffce195d"
+        },
+        {
+          "path": "externals\/scripts\/core.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6440,
+          "sha1": "ebf182aa984662e2ab1f91073f15d33805b9227a"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8808,
+          "sha1": "86faf665f12f466de1f8a8ff86b0b2676f02956d"
+        },
+        {
+          "path": "externals\/styles\/mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5968,
+          "sha1": "abb96a59518b6b02bae8f2bf34d3a03c226160ee"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2001,
+          "sha1": "d241524e1eb51ea14c5d1707ff573ab5e9930450"
+        },
+        {
+          "path": "Form\/Admin\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 516,
+          "sha1": "f50d973e41f78a414a14107c15504ac4ec04e9e4"
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1025,
+          "sha1": "68300559ddddb220ec444fa207762d3a97eb9042"
+        },
+        {
+          "path": "Form\/Admin\/Settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Settings\/Level.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5641,
+          "sha1": "318fee0ee89d3e1172ac8e08562b56d4982b56f8"
+        },
+        {
+          "path": "Form\/Album",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Album\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1454,
+          "sha1": "284d9c6aa8eed2860edbb63b8318066398a23466"
+        },
+        {
+          "path": "Form\/Album\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5338,
+          "sha1": "291f2280917236b71e9c6ca9c038b87d4b1c463b"
+        },
+        {
+          "path": "Form\/Album\/EditPhoto.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2364,
+          "sha1": "26b33b5a56e8bbe528064931fb7599083eab7c28"
+        },
+        {
+          "path": "Form\/Album\/Photos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 855,
+          "sha1": "0cb1593e3d4d61f2c67554b4cec370e97d2cbb9e"
+        },
+        {
+          "path": "Form\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9583,
+          "sha1": "1ebceeeed19b53ee00ce7596bb32891d886c8adc"
+        },
+        {
+          "path": "Form\/Photo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Photo\/Delete.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1345,
+          "sha1": "a54f020663c1bb385e7a54f16e18730bf1ed052a"
+        },
+        {
+          "path": "Form\/Photo\/Edit.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1673,
+          "sha1": "f94b29b0b6db85c1661f5dbbb4be5495cb4803b6"
+        },
+        {
+          "path": "Form\/Search.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1357,
+          "sha1": "5a9602d6089da0e183c8a86031883930537d330e"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Album.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3922,
+          "sha1": "96d97d5bcd19e25156f5799c84b26d07e1b16276"
+        },
+        {
+          "path": "Model\/Category.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1730,
+          "sha1": "df7bd7bd1066ca37ac1179cc4a7a96288a559a75"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/Albums.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2518,
+          "sha1": "132250dead3f185b2ae051acdba6e120c5ea98b6"
+        },
+        {
+          "path": "Model\/DbTable\/Categories.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 942,
+          "sha1": "d38201f5d4edf33e9382e6ad8d47aef5e783fa71"
+        },
+        {
+          "path": "Model\/DbTable\/Photos.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1291,
+          "sha1": "70d2e7a45e70ae88944d1b6a2dbeb4670d05df76"
+        },
+        {
+          "path": "Model\/Exception.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 518,
+          "sha1": "3b1d8c01d036aa1238e6f56e552ff6c1bc14ac2f"
+        },
+        {
+          "path": "Model\/Photo.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8410,
+          "sha1": "756f395ee1e0d68378f5db65493076ab0c501d06"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Composer.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1249,
+          "sha1": "a776437b7e6c257398be323293bb1d0a5de71663"
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2809,
+          "sha1": "d3c96d9081965b72a4e0951d4a47c0a427f75781"
+        },
+        {
+          "path": "Plugin\/Job",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job\/Maintenance",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Job\/Maintenance\/RebuildPrivacy.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4075,
+          "sha1": "4126a4647894ee44f0485cb8b27618a3258ed59f"
+        },
+        {
+          "path": "Plugin\/Menus.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1111,
+          "sha1": "4135d6388ffe51a0237794944d9e704768a4be7a"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 8192,
+          "sha1": null
+        },
+        {
+          "path": "settings\/changelog.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 14937,
+          "sha1": "4b801f7f25ae4bc18f905633d6c838ca254bf301"
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4308,
+          "sha1": "31ba7d3b3bf0543dbc873a679725979ab8f7c199"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9279,
+          "sha1": "d674aeecab00e629156e2ca7113c57d080997876"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3397,
+          "sha1": "6ba3dd69a68a91f03dd5073c9bdda9c296c1a231"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0-4.0.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 409,
+          "sha1": "bd9fa5c4e402827e88ff2462ab710673c430615a"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0beta3-4.0.0rc1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 410,
+          "sha1": "296c671aabb666f336eae1192941528835fea9a0"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0rc1-4.0.0rc2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 300,
+          "sha1": "6a921fa1d80cb5e77502233c32a47677fba03660"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.0rc2-4.0.0.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 297,
+          "sha1": "7edf23f7fae5145df9d381d27198ab4ef5e3e6a8"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.1-4.0.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4587,
+          "sha1": "67efeea4605465a7545f09a5c9043b0485e0c914"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.2-4.0.3.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 905,
+          "sha1": "a2f7c731d689249419916fab9794dc9ea95c636b"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.3-4.0.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 930,
+          "sha1": "561701cf5b7bf0a4969b611bcee9c5638e04e644"
+        },
+        {
+          "path": "settings\/my-upgrade-4.0.5-4.1.0.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 616,
+          "sha1": "3d2a5169fcf1abe54780e8efa59cdffec9660890"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.0-4.1.1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 777,
+          "sha1": "07005b350a826bc6ee003da96f11ad7b43dd04d6"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.1-4.1.2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 161,
+          "sha1": "6326ce594a771f59301e8eda87a27e9b65efdb0f"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.3-4.1.4.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 363,
+          "sha1": "f10ddd719af85face175b6b981790d43fbc4b211"
+        },
+        {
+          "path": "settings\/my-upgrade-4.1.5-4.1.7.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 201,
+          "sha1": "497d79143d7ce31e98b6fdbd830d2642c3d0d9ca"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 12339,
+          "sha1": "6f63cf90501e5f72c9efc9a0c8e3cc14e15f4318"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/helpers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-level\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 881,
+          "sha1": "64b2144a68d220c92b5a2a55267518c45196bfd8"
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1048,
+          "sha1": "6b72c992c13dbd451fd76219a78024a01a1ddda6"
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3319,
+          "sha1": "b57592f5b1a82388f9e0d97749bf0f38f8aceee8"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/categories.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2756,
+          "sha1": "1c5319a5dfa24b95edbae2aff351f6cd0a163a4b"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1010,
+          "sha1": "5c96bf3c384c033f803731812a576dc0d96eb184"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/form.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 482,
+          "sha1": "9435a426aca280208da5d1b16424d941c19c546a"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 664,
+          "sha1": "27646dc3d4df05929e757339df1eb1250adcdf8e"
+        },
+        {
+          "path": "views\/scripts\/album",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/album\/compose-upload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 577,
+          "sha1": "89d39198907a3837d39e293d5c72f7cd183d8607"
+        },
+        {
+          "path": "views\/scripts\/album\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 341,
+          "sha1": "bae02ab65f704ebacba5c81d2b3b69c0150e47a0"
+        },
+        {
+          "path": "views\/scripts\/album\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 604,
+          "sha1": "1ba61da7ca1fbd39ff0c5ba189f39f4a00f6e085"
+        },
+        {
+          "path": "views\/scripts\/album\/editphotos.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2291,
+          "sha1": "6df296ace81756ac2de08e3c0288d9c14e2e1078"
+        },
+        {
+          "path": "views\/scripts\/album\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3202,
+          "sha1": "b083e4b68452eecb63b2d26d8f98dc938436feac"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/browse.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1919,
+          "sha1": "ebf307ab2d6553c0cfb0ec35d0be8783a00fe65a"
+        },
+        {
+          "path": "views\/scripts\/index\/create.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 328,
+          "sha1": "432c5e5671bd7ca947ebedcde4582ad9794cf62f"
+        },
+        {
+          "path": "views\/scripts\/index\/manage.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3607,
+          "sha1": "3dc8a1cd8b1b31336f838b6482e0c8d191dbf0e6"
+        },
+        {
+          "path": "views\/scripts\/index\/upload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1127,
+          "sha1": "5ae434841c6b69dc37059d2207df536458017640"
+        },
+        {
+          "path": "views\/scripts\/photo",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/photo\/delete.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 351,
+          "sha1": "5c182ca3819ea7e2ebb1ac456953fdd8da73b2e4"
+        },
+        {
+          "path": "views\/scripts\/photo\/edit.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 349,
+          "sha1": "e99473fee9de42c9620954edbb6f365c35288011"
+        },
+        {
+          "path": "views\/scripts\/photo\/view.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 9234,
+          "sha1": "c221bb66b3f47ce736bb5fe0917b746b3c28e73f"
+        },
+        {
+          "path": "views\/scripts\/_composePhoto.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2882,
+          "sha1": "5ebb11e651cb3ac6a1b00a2507b857e6558f4c10"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 765,
+          "sha1": "0a20253897aef9cce97dee26106c10d75781a102"
+        },
+        {
+          "path": "widgets\/browse-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 360,
+          "sha1": "af607da845a9b87fce6b77df793d39994686d47d"
+        },
+        {
+          "path": "widgets\/browse-menu-quick",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu-quick\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 792,
+          "sha1": "42f8c8f591b7bb05c29d628f9b50265df06e6947"
+        },
+        {
+          "path": "widgets\/browse-menu-quick\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 258,
+          "sha1": "1e6f7dcf9bfb8170e44877d4c8b0df8b0aa25fe2"
+        },
+        {
+          "path": "widgets\/browse-search",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-search\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 853,
+          "sha1": "f617e9529355693b86ad6ed3a1e7f8adf11141ba"
+        },
+        {
+          "path": "widgets\/browse-search\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 435,
+          "sha1": "719a33da8c5a1f2d94085cf8bf9a3ea02c7e0b5a"
+        },
+        {
+          "path": "widgets\/list-popular-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-popular-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1513,
+          "sha1": "e02635af5e4a8b0397aad7101bf4d6e614640f20"
+        },
+        {
+          "path": "widgets\/list-popular-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1500,
+          "sha1": "26fc4caecbd46f41ef99a79a012cbefb151d8377"
+        },
+        {
+          "path": "widgets\/list-popular-photos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-popular-photos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1810,
+          "sha1": "ab455cd952a0223cbb33c7c9a9acbf0538bf2fda"
+        },
+        {
+          "path": "widgets\/list-popular-photos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1650,
+          "sha1": "2c7d0d5622c514f59fc40a004433e91dfdcab60e"
+        },
+        {
+          "path": "widgets\/list-recent-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-recent-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1685,
+          "sha1": "e69f186841bd062b3855346dcde9f5c5ec09107a"
+        },
+        {
+          "path": "widgets\/list-recent-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1133,
+          "sha1": "c4b12ea348db6eb0bada13eaee60dfecf055169a"
+        },
+        {
+          "path": "widgets\/list-recent-photos",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/list-recent-photos\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2015,
+          "sha1": "636a07608069cb4ba8ce130751fedecc304e1cb3"
+        },
+        {
+          "path": "widgets\/list-recent-photos\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1283,
+          "sha1": "6febfc89cdb359c6d7760beda8e5fcd6986338bc"
+        },
+        {
+          "path": "widgets\/profile-albums",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/profile-albums\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1778,
+          "sha1": "d4c14d5c9c326985293d405bd04c3e564fa2aea0"
+        },
+        {
+          "path": "widgets\/profile-albums\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2967,
+          "sha1": "1e75d5f634ef44100a1cd1d86d6f02a90d6c06fd"
+        }
+      ]
+    },
+    "application\/languages\/en\/album.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/album.csv",
+      "structure": {
+        "path": "album.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 11812,
+        "sha1": "6d7f010a367f3a2da1f8a1ed0f355b9c10cd70ac"
+      }
+    }
+  }
+}

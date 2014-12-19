@@ -1,0 +1,291 @@
+{
+  "type": "module",
+  "name": "marketplaceauthorize",
+  "version": "4.3.0",
+  "revision": null,
+  "path": "application\/modules\/Marketplaceauthorize",
+  "repository": null,
+  "date": "Thu, 01 Dec 2011 22:50:49 +0000",
+  "title": "Marketplace Authorize.net",
+  "description": "",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "SocialEngineMarket"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Thu, 01 Dec 2011 22:50:49 +0000",
+    "title": "Marketplace Authorize.net",
+    "description": "",
+    "developer": null,
+    "authors": [
+      "SocialEngineMarket"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Marketplaceauthorize\/settings\/install.php",
+    "class": "Marketplaceauthorize_Installer",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-marketplace": {
+      "type": "module",
+      "name": "marketplace",
+      "guid": "module-marketplace",
+      "minVersion": "4.3.0",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Marketplaceauthorize": {
+      "type": "directory",
+      "path": "application\/modules\/Marketplaceauthorize",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Authorize.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4188,
+          "sha1": "6a887fd4e02502b84aca0553f99e399e4265112c"
+        },
+        {
+          "path": "Api\/PaymentGateway.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5051,
+          "sha1": "51b1356febd78d5b015e5939405d49a441b2c1cd"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 99,
+          "sha1": "7364d485752f892cfcabf48b12ae836efdf94c0c"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 142,
+          "sha1": "681100e2191b4dce3e492f285b63bf399dda037a"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 871,
+          "sha1": "f019cb45fa2c21604b107f49c0230964d85ae0d4"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 973,
+          "sha1": "e76909f346bc80b3c20324c67f81ec637c366376"
+        },
+        {
+          "path": "settings\/my-install.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 193,
+          "sha1": "205d338c4e269a1f068dcc41016f2104cac7c612"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 91,
+          "sha1": "6a75d4ec60ebe90b2e41e5bcc4c60da7180fce0d"
+        }
+      ]
+    },
+    "application\/languages\/en\/marketplaceauthorize.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/marketplaceauthorize.csv",
+      "structure": {
+        "path": "marketplaceauthorize.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 0,
+        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      }
+    }
+  }
+}

@@ -1,0 +1,163 @@
+"_EMAIL_FOOTER_SUBJECT";""
+"_EMAIL_FOOTER_BODY";"Best Regards,
+Peak Administration"
+"_EMAIL_FOOTER_MEMBER_SUBJECT";""
+"_EMAIL_FOOTER_MEMBER_BODY";"Best Regards,
+Peak Administration"
+"_EMAIL_CORE_VERIFICATION_SUBJECT";"Peak - Email Verification"
+"_EMAIL_CORE_VERIFICATION_BODY";"[header]
+
+Thank you for joining Peak. To verify your email address and continue, please click the following link:
+http://[host][object_link]
+
+Email: [email]
+
+[footer]"
+"_EMAIL_CORE_VERIFICATION_PASSWORD_SUBJECT";"Peak - Email Verification"
+"_EMAIL_CORE_VERIFICATION_PASSWORD_BODY";"[header]
+
+Thank you for joining Peak. To verify your email address and continue, please click the following link:
+http://[host][object_link]
+
+Email: [email]
+Password: [password]
+
+[footer]"
+"_EMAIL_CORE_WELCOME_SUBJECT";"Welcome to Peak!"
+"_EMAIL_CORE_WELCOME_BODY";"[header]
+
+Thank you for joining Peak. Click the following link and enter your information below to login:
+
+http://[host][object_link]
+
+Email: [email]
+
+[footer]"
+"_EMAIL_CORE_WELCOME_PASSWORD_SUBJECT";"Welcome to Peak!"
+"_EMAIL_CORE_WELCOME_PASSWORD_BODY";"[header]
+
+Thank you for joining Peak. Click the following link and enter your information below to login:
+
+http://[host][object_link]
+Your login information:
+Login ID : [ulogin_id]
+Password : [password]
+Email: [email]
+
+[footer]"
+"_EMAIL_CORE_LOSTPASSWORD_SUBJECT";"Peak - Lost Password"
+"_EMAIL_CORE_LOSTPASSWORD_BODY";"[header]
+
+You have requested to reset your password because you have forgotten your password. If you did not request this, please ignore it. It will expire in 24 hours. To reset your password, please click the following link:
+
+Your login infromation (Login ID / Rest Link): 	
+
+	[forget_info_list]
+
+[footer]"
+"_EMAIL_USER_FORGET_INFO";"[ulogin_id] : [reset_link]"
+
+"_EMAIL_USER_ACCOUNT_APPROVED_SUBJECT";"Your account has been approved."
+"_EMAIL_USER_ACCOUNT_APPROVED_BODY";"[header]
+
+Your account has been approved by a Peak administrator. Please click the following link to sign in:
+
+http://[host][object_link]
+
+[footer]"
+"SocialEngine Control Panel";"Peak Control Panel"
+"CORE_FORM_ADMIN_SETTINGS_GENERAL_SITEDESCRIPTION_DESCRIPTION";"Enter a brief, concise description of your community. Include any key words or phrases that you want to appear in search engine listings."
+"CORE_FORM_ADMIN_SETTINGS_GENERAL_SITEKEYWORDS_DESCRIPTION";"Provide some keywords (separated by commas) that describe your community. These will be the default keywords that appear in the <meta> tag in your page header. Enter the most relevant keywords you can think of to help your community's search engine rankings."
+"CORE_FORM_ADMIN_SETTINGS_PERFORMANCE_FILE_PATH_DESCRIPTION";"This is where the
+temporary files containing the cached data are stored. Folder must be writable
+(chmod 777). This should be a path relative to the base directory where
+Peak is installed."
+"USER_ADMIN_SETTINGS_FACEBOOK_DESCRIPTION";"You can now integrate Peak
+to Facebook. To do so, create an Application through the
+<a href=""%1$s"" target=""_blank"">Facebook Developers</a> page."
+"USER_ADMIN_SETTINGS_TWITTER_DESCRIPTION";"You can now integrate Peak
+to Twitter. To do so, create an Application through the
+<a href=""%1$s"" target=""_blank"">Twitter Developers</a> page. You will need to
+select ""Read & Write"" in order to allow posting to Twitter. Please use the
+following Callback URL: %2$s"
+"ACTIVITY_FORM_ADMIN_SETTINGS_GENERAL_DESCRIPTION";"The recent activity feed is an auto-updating list of actions that have recently occurred on your social network. This information is displayed (by default) on users' ""My Home"" page. Also, each user's own personal activity list will be displayed on their profile page if enabled below. Please note that some of the settings here are not retroactive, meaning that changes you make here may not affect old feed items.<br /><br />Note: To enable, manage, and disable individual feed items, please refer to the <a href='%1$s'>Activity Feed Item Type Settings page</a>."
+"ACTIVITY_FORM_ADMIN_SETTINGS_GENERAL_USERLENGTH_DESCRIPTION";"How many items per user can be shown on the recent activity feed? It's important to have a nice mix of items from various users on your social network, so here you can set a limit on the number of items published about each user at any given time. For smaller social networks, a higher number of published items per user might be more appropriate."
+"_SITE_TITLE";"Peak"
+"CORE_VIEWS_SCRIPTS_ADMINADS_INDEX_DESCRIPTION";"Displaying advertisements is an excellent way to monetize your social network. By creating ad campaigns, you can determine exactly where your ads will appear, how long they will be displayed, and who they will be shown to. The key to generating substantial revenue from your social network is to create targeted ad campaigns. This means that you should make an effort to show specific ads to users based on their interests or personal characteristics (e.g. their profile information). To accomplish this, ad campaigns can be created for specific user levels and/or networks."
+"CORE_VIEWS_SCRIPTS_ADMINADS_MANAGEADS_DESCRIPTION";"Displaying advertisements is an excellent way to monetize your social network. By creating ad campaigns, you can determine exactly where your ads will appear, how long they will be displayed, and who they will be shown to. The key to generating substantial revenue from your social network is to create targeted ad campaigns. This means that you should make an effort to show specific ads to users based on their interests or personal characteristics (e.g. their profile information). To accomplish this, ad campaigns can be created for specific user levels and/or networks."
+"CORE_VIEWS_SCRIPTS_ADMINPLUGINS_DESCRIPTION";"Plugins can extend and enhance many aspects of your social network. They often add new features for members, making your community more attractive and interactive. They can also give you more control over how your social network operates. If you've recently purchased a new plugin, you can install it by clicking the ""Add New Plugin"" link below."
+"CORE_FORM_ADMIN_SETTINGS_LOCALE_DESCRIPTION";"Please select a default timezone setting for your social network. This will be the default timezone applied to users' accounts if they do not select a timezone during signup, or if they are not signed in. Select the default locale you want to use on your social network. This will affect the language of the dates that appear on your social network pages."
+"CORE_FORM_ADMIN_SETTINGS_SPAM_DESCRIPTION";"Social networks are often the target of aggressive spam tactics. This most often comes in the form of fake user accounts and spam in comments. On this page, you can manage various anti-spam and censorship features. Note: To turn on the signup image verification feature (a popular anti-spam tool), see the Signup Progress page."
+"CORE_VIEWS_SCRIPTS_ADMINMENU_INDEX_DESCRIPTION";"Use this area to manage the various navigation menus that appear on your social network. When you select the menu you wish to edit, a list of the menu items it contains will be shown. You can drag these items up and down to change their order."
+"CORE_FORM_ADMIN_SETTINGS_PERFORMANCE_DESCRIPTION";"For very large social networks,
+it may be necessary to enable caching to improve performance. If there is a noticable
+decrease in performance on your social network, consider enabling caching below
+(or upgrading your hardware). Caching takes some load off the database server by
+storing commonly retrieved data in temporary files (file-based caching) or memcached
+(memory-based caching). If you are not familiar with caching, we do not recommend
+that you change any of these settings."
+"CORE_FORM_ADMIN_SETTINGS_PERFORMANCE_ENABLE_DESCRIPTION";"Enable caching? Enabling
+caching will decrease the CPU
+usage of your database server (resulting in a decrease of page load
+times). While some non-critical data may appear slightly out of date,
+this will usually not be noticeable to users. For example, some of the
+general site statistics on your homepage may take longer to update.
+This will not be noticeable if your social network is already large and
+populated with a lot of data"
+"USER_FORM_ADMIN_SETTINGS_FRIENDS_DESCRIPTION";"Facilitating relationships between members is essential to building a successful social network. There are several different types of connections that can exist between members. Use this page to determine how members will associate with each other. Note that although we refer to these relationships as ""friendships"" in this control panel, you should use a word that best fits with your social network's theme. For example, if you are running a business-oriented social network, you may want to change this word to ""connections""."
+"USER_FORM_ADMIN_SETTINGS_DIRECTION_DESCRIPTION";"Your social network can allow either one-way or two-way friendships. The default setting is two-way friendships as this is typical for most social networks. One-way friendships mean that when MemberA adds MemberB, MemberB will appear on MemberA's friend list but NOT the reverse."
+"USER_FORM_ADMIN_SETTINGS_VERIFICATION_DESCRIPTION";"Your social network can allow either verified or unverified friendship requests. The default setting is verified friendship requests as this is typical for most social networks. Unverified friendship requests mean that when MemberA adds MemberB as a friend, MemberA and MemberB will immediately become friends without any confirmation."
+"USER_VIEWS_SCRIPTS_ADMINMANAGE_INDEX_DESCRIPTION";"The members of your social network are listed here. If you need to search for a specific member, enter your search criteria in the fields below."
+"USER_VIEWS_SCRIPTS_ADMINLOGINS_INDEX_DESCRIPTION";"This page contains a list of recent login attempts. Use this page to observe suspicious login attempts to your social network."
+"_EMAIL_PAYMENT_SUBSCRIPTION_ACTIVE_BODY";"[header]
+
+Thank you for subscribing to our social network! Your subscription is now active.
+
+[subscription_title]
+[subscription_description]
+[subscription_terms]
+
+You may follow the link below to sign in.
+
+[object_link]
+
+[footer]"
+"_EMAIL_PAYMENT_SUBSCRIPTION_PENDING_BODY";"[header]
+
+Thank you for subscribing to our social network! Your subscription is
+pending, awaiting completion of the transaction. Your membership will be
+activated soon; we will notify you by email when it is ready.
+Thank you for your patience.
+
+[subscription_title]
+[subscription_description]
+[subscription_terms]
+
+[footer]"
+"_EMAIL_INVITE_SUBJECT";"You have received an invitation to join our social network."
+"_EMAIL_INVITE_BODY";"[header]
+
+You have been invited by [sender_title] to join our social network. To join, please follow the link below:
+
+http://[host][object_link]
+
+----------------------------------------
+[message]
+----------------------------------------
+
+[footer]"
+"_EMAIL_INVITE_CODE_SUBJECT";"You have received an invitation to join our social network!"
+"_EMAIL_INVITE_CODE_BODY";"[header]
+
+You have been invited by [sender_title] to join our social network. To join, please follow the link below:
+
+http://[host][object_link]
+
+----------------------------------------
+[message]
+----------------------------------------
+
+[footer]"
+"You are being invited to join our social network.";"You are being invited to join our social network."
+"POLL_FORM_ADMIN_GLOBAL_POLLPUBLIC_DESCRIPTION";"Select whether or not you want to let the public (visitors that are not logged-in) to view the following sections of your social network. In some cases (such as Profiles, Blogs, and Albums), if you have given them the option, your users will be able to make their pages private even though you have made them publically viewable here. For more permissions settings, please visit the General Settings page."
+"GROUP_VIEWS_SCRIPTS_ADMINMANAGE_INDEX_DESCRIPTION";"This page lists all of the group entries your users have posted. You can use this page to monitor these groups and delete offensive material if necessary. Entering criteria into the filter fields will help you find specific group entries. Leaving the filter fields blank will show all the group entries on your social network."
